@@ -1,0 +1,8 @@
+{% for vpn in data.zerotier %}
+    config zerotier '{{ vpn.name }}'
+        {% for key, value in vpn.items() %}
+            {% if key not in ['name', 'peers'] %}
+                {{ key }}={{ value }}
+            {% endif %}
+        {% endfor %}
+{% endfor %}

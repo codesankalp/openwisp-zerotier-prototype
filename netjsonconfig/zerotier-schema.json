@@ -1,0 +1,261 @@
+{
+    "Network": {
+        "type": "object",
+        "properties": {
+            "id": {
+                "type": "string",
+                "example": "8056c2e21c000001",
+                "readOnly": true
+            },
+            "clock": {
+                "type": "integer",
+                "format": "int64",
+                "example": 12345,
+                "readOnly": true
+            },
+            "config": {
+                "$ref": "#/components/schemas/NetworkConfig"
+            },
+            "description": {
+                "type": "string",
+                "example": "Some descriptive text about my network."
+            },
+            "rulesSource": {
+                "type": "string",
+                "example": "accept;"
+            },
+            "permissions": {
+                "$ref": "#/components/schemas/PermissionsMap"
+            },
+            "ownerId": {
+                "type": "string",
+                "example": "00000000-0000-0000-0000-000000000000"
+            },
+            "onlineMemberCount": {
+                "type": "integer",
+                "example": 123,
+                "readOnly": true
+            },
+            "authorizedMemberCount": {
+                "type": "integer",
+                "example": 200,
+                "readOnly": true
+            },
+            "totalMemberCount": {
+                "type": "integer",
+                "example": 250,
+                "readOnly": true
+            },
+            "capabilitiesByName": {
+                "type": "object"
+            },
+            "tagsByName": {
+                "type": "object"
+            }
+        },
+        "description": "Network object"
+    },
+    "NetworkConfig": {
+        "type": "object",
+        "properties": {
+            "id": {
+                "type": "string",
+                "example": "8056c2e21c000001",
+                "description": "Network ID",
+                "readOnly": true
+            },
+            "creationTime": {
+                "type": "integer",
+                "format": "int64",
+                "example": 1442292672978,
+                "description": "Time the network was created",
+                "readOnly": true
+            },
+            "capabilities": {
+                "type": "array",
+                "description": "Array of network capabilities",
+                "items": {
+                    "type": "object"
+                }
+            },
+            "dns": {
+                "type": "object",
+                "$ref": "#/components/schemas/DNS"
+            },
+            "enableBroadcast": {
+                "type": "boolean",
+                "example": true,
+                "description": "Enable broadcast packets on the network"
+            },
+            "ipAssignmentPools": {
+                "type": "array",
+                "description": "Range of IP addresses for the auto assign pool",
+                "items": {
+                    "$ref": "#/components/schemas/IPRange"
+                }
+            },
+            "lastModified": {
+                "type": "integer",
+                "format": "int64",
+                "example": 1588184318235,
+                "description": "Time the network was last modified",
+                "readOnly": true
+            },
+            "mtu": {
+                "type": "integer",
+                "example": 2800,
+                "description": "MTU to set on the client virtual network adapter"
+            },
+            "multicastLimit": {
+                "type": "integer",
+                "example": 32,
+                "description": "Maximum number of recipients per multicast or broadcast. Warning - Setting this to 0 will disable IPv4 communication on your network!"
+            },
+            "name": {
+                "type": "string",
+                "example": "My ZeroTier Network"
+            },
+            "private": {
+                "type": "boolean",
+                "example": true,
+                "description": "Whether or not the network is private.  If false, members will *NOT* need to be authorized to join."
+            },
+            "routes": {
+                "type": "array",
+                "items": {
+                    "$ref": "#/components/schemas/Route"
+                }
+            },
+            "rules": {
+                "type": "array",
+                "items": {
+                    "type": "object"
+                }
+            },
+            "tags": {
+                "type": "array",
+                "items": {
+                    "type": "object"
+                }
+            },
+            "v4AssignMode": {
+                "$ref": "#/components/schemas/IPV4AssignMode"
+            },
+            "v6AssignMode": {
+                "$ref": "#/components/schemas/IPV6AssignMode"
+            }
+        }
+    },
+    "PermissionsMap": {
+        "type": "object",
+        "additionalProperties": {
+            "$ref": "#/components/schemas/Permissions"
+        },
+        "example": {
+            "00000000-0000-0000-0000-000000000000": {
+                "a": true,
+                "d": true,
+                "m": true,
+                "r": true
+            }
+        }
+    },
+    "Permissions": {
+        "type": "object",
+        "properties": {
+            "a": {
+                "type": "boolean",
+                "example": true,
+                "description": "Authorize permission"
+            },
+            "d": {
+                "type": "boolean",
+                "example": true,
+                "description": "Delete permission"
+            },
+            "m": {
+                "type": "boolean",
+                "example": true,
+                "description": "Modify network settings permission"
+            },
+            "r": {
+                "type": "boolean",
+                "example": true,
+                "description": "Read network settings permission"
+            }
+        }
+    },
+    "IPRange": {
+        "type": "object",
+        "properties": {
+            "ipRangeStart": {
+                "type": "string",
+                "example": "10.0.0.1"
+            },
+            "ipRangeEnd": {
+                "type": "string",
+                "example": "10.0.0.255"
+            }
+        }
+    },
+    "DNS": {
+        "type": "object",
+        "properties": {
+            "domain": {
+                "type": "string",
+                "example": "some.domain",
+                "description": "Search domain to use for DNS records"
+            },
+            "servers": {
+                "type": "array",
+                "items": {
+                    "type": "string"
+                },
+                "example": [
+                    "10.0.0.3"
+                ],
+                "description": "IP address of unicast DNS service"
+            }
+        }
+    },
+    "Route": {
+        "type": "object",
+        "properties": {
+            "target": {
+                "type": "string",
+                "example": "10.0.0.0/24"
+            },
+            "via": {
+                "type": "string",
+                "example": null,
+                "nullable": true
+            }
+        }
+    },
+    "IPV4AssignMode": {
+        "type": "object",
+        "properties": {
+            "zt": {
+                "type": "boolean",
+                "example": true
+            }
+        }
+    },
+    "IPV6AssignMode": {
+        "type": "object",
+        "properties": {
+            "6plane": {
+                "type": "boolean",
+                "example": true
+            },
+            "rfc4193": {
+                "type": "boolean",
+                "example": false
+            },
+            "zt": {
+                "type": "boolean",
+                "example": false
+            }
+        }
+    }
+}
