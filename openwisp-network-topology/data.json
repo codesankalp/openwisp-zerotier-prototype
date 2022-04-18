@@ -1,0 +1,848 @@
+[
+ {
+  "address": "62f865ae71",
+  "isBonded": false,
+  "latency": 314,
+  "paths": [
+   {
+    "active": true,
+    "address": "50.7.252.138/9993",
+    "expired": false,
+    "lastReceive": 1650283830992,
+    "lastSend": 1650283830677,
+    "preferred": true,
+    "trustedPathId": 0
+   },
+   {
+    "active": true,
+    "address": "50.7.252.138/9993",
+    "expired": false,
+    "lastReceive": 1650282188906,
+    "lastSend": 1650282418860,
+    "preferred": false,
+    "trustedPathId": 0
+   },
+   {
+    "active": true,
+    "address": "50.7.252.138/9993",
+    "expired": false,
+    "lastReceive": 1650282188906,
+    "lastSend": 1650282418860,
+    "preferred": false,
+    "trustedPathId": 0
+   },
+   {
+    "active": true,
+    "address": "50.7.252.138/9993",
+    "expired": false,
+    "lastReceive": 1650282188906,
+    "lastSend": 1650282418860,
+    "preferred": false,
+    "trustedPathId": 0
+   },
+   {
+    "active": true,
+    "address": "50.7.252.138/9993",
+    "expired": false,
+    "lastReceive": 1650282188906,
+    "lastSend": 1650282418860,
+    "preferred": false,
+    "trustedPathId": 0
+   },
+   {
+    "active": true,
+    "address": "50.7.252.138/9993",
+    "expired": false,
+    "lastReceive": 1650282188906,
+    "lastSend": 1650282418860,
+    "preferred": false,
+    "trustedPathId": 0
+   },
+   {
+    "active": true,
+    "address": "50.7.252.138/9993",
+    "expired": false,
+    "lastReceive": 1650282188906,
+    "lastSend": 1650282418860,
+    "preferred": false,
+    "trustedPathId": 0
+   },
+   {
+    "active": true,
+    "address": "50.7.252.138/9993",
+    "expired": false,
+    "lastReceive": 1650282188906,
+    "lastSend": 1650282418860,
+    "preferred": false,
+    "trustedPathId": 0
+   },
+   {
+    "active": true,
+    "address": "50.7.252.138/9993",
+    "expired": false,
+    "lastReceive": 1650282188906,
+    "lastSend": 1650282418860,
+    "preferred": false,
+    "trustedPathId": 0
+   },
+   {
+    "active": true,
+    "address": "50.7.252.138/9993",
+    "expired": false,
+    "lastReceive": 1650282188906,
+    "lastSend": 1650282418860,
+    "preferred": false,
+    "trustedPathId": 0
+   },
+   {
+    "active": true,
+    "address": "50.7.252.138/9993",
+    "expired": false,
+    "lastReceive": 1650282188906,
+    "lastSend": 1650282418860,
+    "preferred": false,
+    "trustedPathId": 0
+   },
+   {
+    "active": true,
+    "address": "50.7.252.138/9993",
+    "expired": false,
+    "lastReceive": 1650282188906,
+    "lastSend": 1650282418860,
+    "preferred": false,
+    "trustedPathId": 0
+   },
+   {
+    "active": true,
+    "address": "50.7.252.138/9993",
+    "expired": false,
+    "lastReceive": 1650282188906,
+    "lastSend": 1650282418860,
+    "preferred": false,
+    "trustedPathId": 0
+   }
+  ],
+  "role": "PLANET",
+  "version": "-1.-1.-1",
+  "versionMajor": -1,
+  "versionMinor": -1,
+  "versionRev": -1
+ },
+ {
+  "address": "6ab565387a",
+  "isBonded": false,
+  "latency": 365,
+  "paths": [
+   {
+    "active": true,
+    "address": "35.184.151.79/65111",
+    "expired": false,
+    "lastReceive": 1650276602287,
+    "lastSend": 1650276602025,
+    "preferred": false,
+    "trustedPathId": 0
+   },
+   {
+    "active": true,
+    "address": "35.184.151.79/41009",
+    "expired": false,
+    "lastReceive": 1650283825938,
+    "lastSend": 1650283830677,
+    "preferred": true,
+    "trustedPathId": 0
+   }
+  ],
+  "role": "LEAF",
+  "version": "1.8.5",
+  "versionMajor": 1,
+  "versionMinor": 8,
+  "versionRev": 5
+ },
+ {
+  "address": "778cde7190",
+  "isBonded": false,
+  "latency": 305,
+  "paths": [
+   {
+    "active": true,
+    "address": "103.195.103.66/9993",
+    "expired": false,
+    "lastReceive": 1650283820905,
+    "lastSend": 1650283830677,
+    "preferred": true,
+    "trustedPathId": 0
+   },
+   {
+    "active": true,
+    "address": "103.195.103.66/9993",
+    "expired": false,
+    "lastReceive": 1650283830992,
+    "lastSend": 1650283830677,
+    "preferred": false,
+    "trustedPathId": 0
+   },
+   {
+    "active": true,
+    "address": "103.195.103.66/9993",
+    "expired": false,
+    "lastReceive": 1650283816045,
+    "lastSend": 1650283830677,
+    "preferred": false,
+    "trustedPathId": 0
+   },
+   {
+    "active": true,
+    "address": "103.195.103.66/9993",
+    "expired": false,
+    "lastReceive": 1650283820905,
+    "lastSend": 1650283830677,
+    "preferred": true,
+    "trustedPathId": 0
+   },
+   {
+    "active": true,
+    "address": "103.195.103.66/9993",
+    "expired": false,
+    "lastReceive": 1650283830992,
+    "lastSend": 1650283830677,
+    "preferred": false,
+    "trustedPathId": 0
+   },
+   {
+    "active": true,
+    "address": "103.195.103.66/9993",
+    "expired": false,
+    "lastReceive": 1650283816045,
+    "lastSend": 1650283830677,
+    "preferred": false,
+    "trustedPathId": 0
+   },
+   {
+    "active": true,
+    "address": "103.195.103.66/9993",
+    "expired": false,
+    "lastReceive": 1650283820905,
+    "lastSend": 1650283830677,
+    "preferred": true,
+    "trustedPathId": 0
+   },
+   {
+    "active": true,
+    "address": "103.195.103.66/9993",
+    "expired": false,
+    "lastReceive": 1650283830992,
+    "lastSend": 1650283830677,
+    "preferred": false,
+    "trustedPathId": 0
+   },
+   {
+    "active": true,
+    "address": "103.195.103.66/9993",
+    "expired": false,
+    "lastReceive": 1650283816045,
+    "lastSend": 1650283830677,
+    "preferred": false,
+    "trustedPathId": 0
+   },
+   {
+    "active": true,
+    "address": "103.195.103.66/9993",
+    "expired": false,
+    "lastReceive": 1650283820905,
+    "lastSend": 1650283830677,
+    "preferred": true,
+    "trustedPathId": 0
+   },
+   {
+    "active": true,
+    "address": "103.195.103.66/9993",
+    "expired": false,
+    "lastReceive": 1650283830992,
+    "lastSend": 1650283830677,
+    "preferred": false,
+    "trustedPathId": 0
+   },
+   {
+    "active": true,
+    "address": "103.195.103.66/9993",
+    "expired": false,
+    "lastReceive": 1650283816045,
+    "lastSend": 1650283830677,
+    "preferred": false,
+    "trustedPathId": 0
+   },
+   {
+    "active": true,
+    "address": "103.195.103.66/9993",
+    "expired": false,
+    "lastReceive": 1650283820905,
+    "lastSend": 1650283830677,
+    "preferred": true,
+    "trustedPathId": 0
+   },
+   {
+    "active": true,
+    "address": "103.195.103.66/9993",
+    "expired": false,
+    "lastReceive": 1650283830992,
+    "lastSend": 1650283830677,
+    "preferred": false,
+    "trustedPathId": 0
+   },
+   {
+    "active": true,
+    "address": "103.195.103.66/9993",
+    "expired": false,
+    "lastReceive": 1650283816045,
+    "lastSend": 1650283830677,
+    "preferred": false,
+    "trustedPathId": 0
+   },
+   {
+    "active": true,
+    "address": "103.195.103.66/9993",
+    "expired": false,
+    "lastReceive": 1650283820905,
+    "lastSend": 1650283830677,
+    "preferred": true,
+    "trustedPathId": 0
+   },
+   {
+    "active": true,
+    "address": "103.195.103.66/9993",
+    "expired": false,
+    "lastReceive": 1650283830992,
+    "lastSend": 1650283830677,
+    "preferred": false,
+    "trustedPathId": 0
+   },
+   {
+    "active": true,
+    "address": "103.195.103.66/9993",
+    "expired": false,
+    "lastReceive": 1650283816045,
+    "lastSend": 1650283830677,
+    "preferred": false,
+    "trustedPathId": 0
+   },
+   {
+    "active": true,
+    "address": "103.195.103.66/9993",
+    "expired": false,
+    "lastReceive": 1650283820905,
+    "lastSend": 1650283830677,
+    "preferred": true,
+    "trustedPathId": 0
+   },
+   {
+    "active": true,
+    "address": "103.195.103.66/9993",
+    "expired": false,
+    "lastReceive": 1650283830992,
+    "lastSend": 1650283830677,
+    "preferred": false,
+    "trustedPathId": 0
+   },
+   {
+    "active": true,
+    "address": "103.195.103.66/9993",
+    "expired": false,
+    "lastReceive": 1650283816045,
+    "lastSend": 1650283830677,
+    "preferred": false,
+    "trustedPathId": 0
+   },
+   {
+    "active": true,
+    "address": "103.195.103.66/9993",
+    "expired": false,
+    "lastReceive": 1650283816045,
+    "lastSend": 1650283830677,
+    "preferred": false,
+    "trustedPathId": 0
+   }
+  ],
+  "role": "PLANET",
+  "version": "-1.-1.-1",
+  "versionMajor": -1,
+  "versionMinor": -1,
+  "versionRev": -1
+ },
+ {
+  "address": "8e1dd5221b",
+  "isBonded": false,
+  "latency": -1,
+  "paths": [
+   {
+    "active": true,
+    "address": "192.168.1.1/9993",
+    "expired": false,
+    "lastReceive": 1650280978238,
+    "lastSend": 1650280978238,
+    "preferred": false,
+    "trustedPathId": 0
+   },
+   {
+    "active": true,
+    "address": "192.168.1.1/29994",
+    "expired": false,
+    "lastReceive": 1650280722801,
+    "lastSend": 1650280722794,
+    "preferred": false,
+    "trustedPathId": 0
+   },
+   {
+    "active": true,
+    "address": "192.168.1.1/43255",
+    "expired": false,
+    "lastReceive": 1650280963082,
+    "lastSend": 1650280963081,
+    "preferred": false,
+    "trustedPathId": 0
+   },
+   {
+    "active": true,
+    "address": "fdb7:6d1e:1c55::1/9993",
+    "expired": false,
+    "lastReceive": 1650283801405,
+    "lastSend": 1650283800634,
+    "preferred": true,
+    "trustedPathId": 0
+   }
+  ],
+  "role": "LEAF",
+  "version": "1.8.4",
+  "versionMajor": 1,
+  "versionMinor": 8,
+  "versionRev": 4
+ },
+ {
+  "address": "cafe04eba9",
+  "isBonded": false,
+  "latency": 293,
+  "paths": [
+   {
+    "active": true,
+    "address": "84.17.53.155/9993",
+    "expired": false,
+    "lastReceive": 1650283830992,
+    "lastSend": 1650283830677,
+    "preferred": true,
+    "trustedPathId": 0
+   },
+   {
+    "active": true,
+    "address": "84.17.53.155/9993",
+    "expired": false,
+    "lastReceive": 1650278304164,
+    "lastSend": 1650278544200,
+    "preferred": false,
+    "trustedPathId": 0
+   },
+   {
+    "active": true,
+    "address": "84.17.53.155/9993",
+    "expired": false,
+    "lastReceive": 1650283830992,
+    "lastSend": 1650283830677,
+    "preferred": true,
+    "trustedPathId": 0
+   },
+   {
+    "active": true,
+    "address": "84.17.53.155/9993",
+    "expired": false,
+    "lastReceive": 1650278304164,
+    "lastSend": 1650278544200,
+    "preferred": false,
+    "trustedPathId": 0
+   },
+   {
+    "active": true,
+    "address": "84.17.53.155/9993",
+    "expired": false,
+    "lastReceive": 1650283830992,
+    "lastSend": 1650283830677,
+    "preferred": true,
+    "trustedPathId": 0
+   },
+   {
+    "active": true,
+    "address": "84.17.53.155/9993",
+    "expired": false,
+    "lastReceive": 1650278304164,
+    "lastSend": 1650278544200,
+    "preferred": false,
+    "trustedPathId": 0
+   },
+   {
+    "active": true,
+    "address": "84.17.53.155/9993",
+    "expired": false,
+    "lastReceive": 1650283830992,
+    "lastSend": 1650283830677,
+    "preferred": true,
+    "trustedPathId": 0
+   },
+   {
+    "active": true,
+    "address": "84.17.53.155/9993",
+    "expired": false,
+    "lastReceive": 1650278304164,
+    "lastSend": 1650278544200,
+    "preferred": false,
+    "trustedPathId": 0
+   },
+   {
+    "active": true,
+    "address": "84.17.53.155/9993",
+    "expired": false,
+    "lastReceive": 1650283830992,
+    "lastSend": 1650283830677,
+    "preferred": true,
+    "trustedPathId": 0
+   },
+   {
+    "active": true,
+    "address": "84.17.53.155/9993",
+    "expired": false,
+    "lastReceive": 1650278304164,
+    "lastSend": 1650278544200,
+    "preferred": false,
+    "trustedPathId": 0
+   },
+   {
+    "active": true,
+    "address": "84.17.53.155/9993",
+    "expired": false,
+    "lastReceive": 1650283830992,
+    "lastSend": 1650283830677,
+    "preferred": true,
+    "trustedPathId": 0
+   },
+   {
+    "active": true,
+    "address": "84.17.53.155/9993",
+    "expired": false,
+    "lastReceive": 1650278304164,
+    "lastSend": 1650278544200,
+    "preferred": false,
+    "trustedPathId": 0
+   },
+   {
+    "active": true,
+    "address": "84.17.53.155/9993",
+    "expired": false,
+    "lastReceive": 1650283830992,
+    "lastSend": 1650283830677,
+    "preferred": true,
+    "trustedPathId": 0
+   },
+   {
+    "active": true,
+    "address": "84.17.53.155/9993",
+    "expired": false,
+    "lastReceive": 1650278304164,
+    "lastSend": 1650278544200,
+    "preferred": false,
+    "trustedPathId": 0
+   },
+   {
+    "active": true,
+    "address": "84.17.53.155/9993",
+    "expired": false,
+    "lastReceive": 1650283830992,
+    "lastSend": 1650283830677,
+    "preferred": true,
+    "trustedPathId": 0
+   },
+   {
+    "active": true,
+    "address": "84.17.53.155/9993",
+    "expired": false,
+    "lastReceive": 1650278304164,
+    "lastSend": 1650278544200,
+    "preferred": false,
+    "trustedPathId": 0
+   }
+  ],
+  "role": "PLANET",
+  "version": "-1.-1.-1",
+  "versionMajor": -1,
+  "versionMinor": -1,
+  "versionRev": -1
+ },
+ {
+  "address": "cafe9efeb9",
+  "isBonded": false,
+  "latency": 281,
+  "paths": [
+   {
+    "active": true,
+    "address": "104.194.8.134/9993",
+    "expired": false,
+    "lastReceive": 1650283830992,
+    "lastSend": 1650283830677,
+    "preferred": true,
+    "trustedPathId": 0
+   },
+   {
+    "active": true,
+    "address": "104.194.8.134/9993",
+    "expired": false,
+    "lastReceive": 1650283760850,
+    "lastSend": 1650283830677,
+    "preferred": false,
+    "trustedPathId": 0
+   },
+   {
+    "active": true,
+    "address": "104.194.8.134/9993",
+    "expired": false,
+    "lastReceive": 1650283760850,
+    "lastSend": 1650283830677,
+    "preferred": false,
+    "trustedPathId": 0
+   },
+   {
+    "active": true,
+    "address": "104.194.8.134/9993",
+    "expired": false,
+    "lastReceive": 1650283760850,
+    "lastSend": 1650283830677,
+    "preferred": false,
+    "trustedPathId": 0
+   },
+   {
+    "active": true,
+    "address": "104.194.8.134/9993",
+    "expired": false,
+    "lastReceive": 1650283760850,
+    "lastSend": 1650283830677,
+    "preferred": false,
+    "trustedPathId": 0
+   },
+   {
+    "active": true,
+    "address": "104.194.8.134/9993",
+    "expired": false,
+    "lastReceive": 1650283760850,
+    "lastSend": 1650283830677,
+    "preferred": false,
+    "trustedPathId": 0
+   },
+   {
+    "active": true,
+    "address": "104.194.8.134/9993",
+    "expired": false,
+    "lastReceive": 1650283760850,
+    "lastSend": 1650283830677,
+    "preferred": false,
+    "trustedPathId": 0
+   },
+   {
+    "active": true,
+    "address": "104.194.8.134/9993",
+    "expired": false,
+    "lastReceive": 1650283760850,
+    "lastSend": 1650283830677,
+    "preferred": false,
+    "trustedPathId": 0
+   },
+   {
+    "active": true,
+    "address": "104.194.8.134/9993",
+    "expired": false,
+    "lastReceive": 1650283760850,
+    "lastSend": 1650283830677,
+    "preferred": false,
+    "trustedPathId": 0
+   },
+   {
+    "active": true,
+    "address": "104.194.8.134/9993",
+    "expired": false,
+    "lastReceive": 1650283760850,
+    "lastSend": 1650283830677,
+    "preferred": false,
+    "trustedPathId": 0
+   },
+   {
+    "active": true,
+    "address": "104.194.8.134/9993",
+    "expired": false,
+    "lastReceive": 1650283760850,
+    "lastSend": 1650283830677,
+    "preferred": false,
+    "trustedPathId": 0
+   },
+   {
+    "active": true,
+    "address": "104.194.8.134/9993",
+    "expired": false,
+    "lastReceive": 1650283760850,
+    "lastSend": 1650283830677,
+    "preferred": false,
+    "trustedPathId": 0
+   },
+   {
+    "active": true,
+    "address": "104.194.8.134/9993",
+    "expired": false,
+    "lastReceive": 1650283760850,
+    "lastSend": 1650283830677,
+    "preferred": false,
+    "trustedPathId": 0
+   },
+   {
+    "active": true,
+    "address": "104.194.8.134/9993",
+    "expired": false,
+    "lastReceive": 1650283760850,
+    "lastSend": 1650283830677,
+    "preferred": false,
+    "trustedPathId": 0
+   },
+   {
+    "active": true,
+    "address": "104.194.8.134/9993",
+    "expired": false,
+    "lastReceive": 1650283760850,
+    "lastSend": 1650283830677,
+    "preferred": false,
+    "trustedPathId": 0
+   },
+   {
+    "active": true,
+    "address": "104.194.8.134/9993",
+    "expired": false,
+    "lastReceive": 1650283760850,
+    "lastSend": 1650283830677,
+    "preferred": false,
+    "trustedPathId": 0
+   },
+   {
+    "active": true,
+    "address": "104.194.8.134/9993",
+    "expired": false,
+    "lastReceive": 1650283760850,
+    "lastSend": 1650283830677,
+    "preferred": false,
+    "trustedPathId": 0
+   },
+   {
+    "active": true,
+    "address": "104.194.8.134/9993",
+    "expired": false,
+    "lastReceive": 1650283760850,
+    "lastSend": 1650283830677,
+    "preferred": false,
+    "trustedPathId": 0
+   },
+   {
+    "active": true,
+    "address": "104.194.8.134/9993",
+    "expired": false,
+    "lastReceive": 1650283760850,
+    "lastSend": 1650283830677,
+    "preferred": false,
+    "trustedPathId": 0
+   },
+   {
+    "active": true,
+    "address": "104.194.8.134/9993",
+    "expired": false,
+    "lastReceive": 1650283760850,
+    "lastSend": 1650283830677,
+    "preferred": false,
+    "trustedPathId": 0
+   },
+   {
+    "active": true,
+    "address": "104.194.8.134/9993",
+    "expired": false,
+    "lastReceive": 1650283760850,
+    "lastSend": 1650283830677,
+    "preferred": false,
+    "trustedPathId": 0
+   },
+   {
+    "active": true,
+    "address": "104.194.8.134/9993",
+    "expired": false,
+    "lastReceive": 1650283760850,
+    "lastSend": 1650283830677,
+    "preferred": false,
+    "trustedPathId": 0
+   },
+   {
+    "active": true,
+    "address": "104.194.8.134/9993",
+    "expired": false,
+    "lastReceive": 1650283760850,
+    "lastSend": 1650283830677,
+    "preferred": false,
+    "trustedPathId": 0
+   },
+   {
+    "active": true,
+    "address": "104.194.8.134/9993",
+    "expired": false,
+    "lastReceive": 1650283760850,
+    "lastSend": 1650283830677,
+    "preferred": false,
+    "trustedPathId": 0
+   },
+   {
+    "active": true,
+    "address": "104.194.8.134/9993",
+    "expired": false,
+    "lastReceive": 1650283760850,
+    "lastSend": 1650283830677,
+    "preferred": false,
+    "trustedPathId": 0
+   },
+   {
+    "active": true,
+    "address": "104.194.8.134/9993",
+    "expired": false,
+    "lastReceive": 1650283760850,
+    "lastSend": 1650283830677,
+    "preferred": false,
+    "trustedPathId": 0
+   },
+   {
+    "active": true,
+    "address": "104.194.8.134/9993",
+    "expired": false,
+    "lastReceive": 1650283760850,
+    "lastSend": 1650283830677,
+    "preferred": false,
+    "trustedPathId": 0
+   },
+   {
+    "active": true,
+    "address": "104.194.8.134/9993",
+    "expired": false,
+    "lastReceive": 1650283760850,
+    "lastSend": 1650283830677,
+    "preferred": false,
+    "trustedPathId": 0
+   },
+   {
+    "active": true,
+    "address": "104.194.8.134/9993",
+    "expired": false,
+    "lastReceive": 1650283760850,
+    "lastSend": 1650283830677,
+    "preferred": false,
+    "trustedPathId": 0
+   }
+  ],
+  "role": "PLANET",
+  "version": "-1.-1.-1",
+  "versionMajor": -1,
+  "versionMinor": -1,
+  "versionRev": -1
+ }
+]
