@@ -13,3 +13,24 @@
 zerotier-idtool generate identity.secret identity.public
 ```
 6. Changing templates to automatic generate ZeroTier VPN backend configuration.
+
+
+## Managing ZeroTier networks from OpenWISP -  REST API
+
+1. Creating a separate zerotier api view i.e. `openwisp_controller.config.api.zerotier_views.py`.
+2. In this zerotier_views all the external request will be made to zerotier host.
+3. A request factory will be created for zerotier API which can be used or extended for managing network.
+4. Request factory will contain all the methods to make API request for endpoints mentioned in https://docs.zerotier.com/central/v1/ 
+5. We can create a separate package for this also because one that i found was not used.
+6. Using this ZeroTier API for openwisp controller API where vpn backend is ZeroTier.
+
+![zerotier-api](../images/zerotier-rest-api.png)
+
+
+## Authorize member in ZeroTier network
+
+If network is set to **private** in ZeroTier Vpn and to add a new device we need to make a REST API call to ZeroTier API authorize that device.
+
+Url: `https://{host}/api/v1/network/{networkID}/member/{memberID}`
+
+We will use the above implemented ZeroTier client to make this call.
