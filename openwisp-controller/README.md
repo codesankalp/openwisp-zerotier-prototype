@@ -1,3 +1,6 @@
+## Prototype Demo
+
+![controller-zerotier demo](../images/zerotier_demo.gif)
 ## Run prototype:
 
 1. Checkout zerotier-prototype branch
@@ -9,6 +12,16 @@
 
 2. Run the development server.
 
+## Implemented things in prototype:
+
+- Added zerotier as a vpn backend
+- Creating network using ZeroTier API while adding VPN in openwisp-controller.
+- Added support for automatic template creation
+- Used this template to add configuration in OpenWRT device.
+
+**Note**: Some fields are irrelevant in the preview configuration. I will remove those fields in future and add more supported fields in netjsonconfig schema.
+
+Prototype Code: https://github.com/codesankalp/openwisp-controller/tree/zerotier-prototype
 ## Support for ZeroTier VPN backend
 
 1. Extending ZeroTier backend created in netjsonconfig to `vpn_backends.py`.
