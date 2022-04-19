@@ -14,5 +14,6 @@ class ZeroTier(BaseConverter):
         return result
 
     def __intermediate_vpn(self, config, remove=[False, 0, '']):
-        config['join'] = [config.pop('id')]
+        config['nwid'] = config.pop('id')
+        config['n'] = config.get('name')
         return self.sorted_dict(config)

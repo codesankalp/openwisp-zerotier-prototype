@@ -6,6 +6,10 @@ from copy import deepcopy
 
 from ...schema import schema as default_schema
 
+# missing properties from this schema are:
+# authTokens, capabilities, lastModified, mtu, multicastLimit,
+# remoteTraceLevel, remoteTraceTarget, routes, rules, v4AssignMode,
+# v6AssignMode, dns, ssoConfig, tags
 base_zerotier_schema = {
     "$schema": "http://json-schema.org/draft-04/schema#",
     "type": "object",
@@ -21,13 +25,12 @@ base_zerotier_schema = {
                 "type": "object",
                 "title": "Wireguard tunnel",
                 "additionalProperties": True,
-                "required": ["name", "id", "enabled"],
+                "required": ["name", "id", "enableBroadcast"],
                 "properties": {
                     "name": {
                         "title": "network name",
                         "description": "Zerotier Network name",
                         "type": "string",
-                        "propertyOrder": 1,
                     },
                     "id": {
                         "title": "network id",
@@ -35,12 +38,21 @@ base_zerotier_schema = {
                         "type": "string",
                         "minLength": 16,
                         "maxLength": 16,
-                        "propertyOrder": 1,
                     },
-                    "enabled": {
-                        "title": "enabled",
+                    "enableBroadcast": {
+                        "title": "enable broadcast",
                         "type": "boolean",
-                        "description": "Whether or not the network is enabled.",
+                        "description": "Enable broadcast packets on the network",
+                    },
+                    "creationTime": {
+                        "title": "creation time",
+                        "type": "integer",
+                        "description": "Creation time of the network.",
+                    },
+                    "private": {
+                        "title": "private",
+                        "type": "boolean",
+                        "description": "Whether or not the network is private.  If false, members will *NOT* need to be authorized to join.",
                     },
                 },
             },

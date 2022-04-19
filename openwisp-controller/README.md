@@ -1,3 +1,14 @@
+## Run prototype:
+
+1. Checkout zerotier-prototype branch
+
+    ```
+    git clone git@github.com:codesankalp/openwisp-controller.git
+    git checkout zerotier-prototype
+    ```
+
+2. Run the development server.
+
 ## Support for ZeroTier VPN backend
 
 1. Extending ZeroTier backend created in netjsonconfig to `vpn_backends.py`.

@@ -3,10 +3,12 @@
 1. Defining schema for the zerotier backend i.e. adding support for `zerotier-schema.json` in `schema.py`.
 2. Adding support for that schema in `netjsonconfig.backends.zerotier.converter` and `netjsonconfig.backends.zerotier.parser`
 3. Adding renderer and template for that schema.
-4. Using all above mentioned things to create `ZeroTier` backend which will generate data for zerotier controller REST API.
+4. Using all above mentioned things to create `ZeroTier` backend which will generate data for zerotier controller.
 
 In this basic prototype a zerotier backend is developed in which a schema for name, id and enabled is defined.
 Using that schema a converter and parser is written.
+
+![network conf](../images/network_conf.png)
 
 ## Support for ZeroTier tunnels to OpenWRT backend 
 
@@ -24,35 +26,70 @@ We can test this prototype using below code:
 **Note**: Schema changes is needed, this is just a basic prototype to generate zerotier-openwrt syntax.
 
 ```python
-from netjsonconfig.backends.zerotier.zerotier import ZeroTier
 from netjsonconfig.backends.openwrt.openwrt import OpenWrt
+from netjsonconfig.backends.zerotier.zerotier import ZeroTier
 
 config = {
     "zerotier": [
         {
-            "name": "test1",
-            "enabled": True,
+            "name": "network1",
+            "enableBroadcast": True,
             "id": "6ab565387ae448c5",
+            "private": False,
         },
         {
-            "name": "test2",
-            "enabled": False,
+            "name": "network2 sample",
+            "enableBroadcast": False,
             "id": "8056c2e21c000009",
+            "private": True,
         },
     ]
 }
+
+print(ZeroTier(config).render())
+# output partially matches with conf in /var/lib/zerotier-one/{id}.conf:
+"""
+# zerotier config: 6ab565387ae448c5
+
+enableBroadcast=True
+n=network1
+nwid=6ab565387ae448c5
+private=False
+
+# zerotier config: 8056c2e21c000009
+
+enableBroadcast=False
+n=network2
+nwid=8056c2e21c000009
+private=True
+"""
 
 print(OpenWrt(config).render())
 # output will be:
 """
 package zerotier
 
-config zerotier 'test1'
+config zerotier 'network1_config'
         option enabled '1'
         list join '6ab565387ae448c5'
 
-config zerotier 'test2'
+config zerotier 'network2_sample_config'
         option enabled '0'
         list join '8056c2e21c000009'
 """
 ```
+
+### Steps to run prototype:
+
+1. Checkout zerotier-prototype branch
+
+    ```
+    git clone git@github.com:codesankalp/netjsonconfig.git
+    git checkout zerotier-prototype
+    ```
+
+2. Run tests to check the configuration generation
+
+    ```
+    p -m unittest tests/tests.py
+    ```
