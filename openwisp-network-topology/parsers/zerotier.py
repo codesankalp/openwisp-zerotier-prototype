@@ -1,21 +1,33 @@
-from .base import BaseParser
+import json
+
+from netdiff.parsers.base import BaseParser
 
 
 class ZeroTierParser(BaseParser):
+    def to_python(self, data):
+        return data
+
     def parse(self, data):
         graph = self._init_graph()
-        server = self._server_common_name
-        graph.add_node(server)
-        nodes = []
-        for node in data['nodes']:
-            graph.add_node(node['address'], **node)
-            nodes.append(node['address'])
-        self._parse_edge(graph, nodes)
+        leaf_nodes = []
+        planet_nodes = []
+        for network in data:
+            graph.add_node(
+                network['address'],
+                **network,
+            )
+            if network.get('role') == 'PLANET':
+                planet_nodes.append(network['address'])
+            else:
+                leaf_nodes.append(network['address'])
+        self._parse_edge(graph, leaf_nodes)
+        self._parse_edge(graph, planet_nodes)
         return graph
 
     def _parse_edge(self, graph, nodes):
         for node in nodes:
-            for path in graph.get('node'):
+            node_data = graph.nodes.get(node)
+            for path in node_data['paths']:
                 graph.add_edge(
-                    node, path.get('address'), weight=node.get('latency'), **path
+                    node, path.get('address'), weight=node_data.get('latency'), **path
                 )

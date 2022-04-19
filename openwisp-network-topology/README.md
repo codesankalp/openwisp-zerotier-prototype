@@ -16,3 +16,23 @@ We can use the openwisp zerotier api client implemented in openwisp controller t
 Creating the parser for ZeroTier in **[netdiff](https://github.com/openwisp/netdiff)** and extending it in openwisp-network-topology.
 
 See `data.json` for peers information and `zerotier.py` to see prototype of parser.
+
+## How to run prototype
+
+```python
+
+import json
+import networkx
+
+data = json.loads(open('data.json', 'r').read())
+graph = ZeroTierParser(data).parse(data)
+
+# use in jupyter notebook
+networkx.draw(graph, with_labels=True, font_size=12)
+```
+
+The above code loads the peers data from `data.json` and passes it into `netdiff.parsers.ZeroTierParser` to return a graph with all nodes paths.
+
+## Output
+
+![parse output](../images/parser.png)
